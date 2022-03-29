@@ -2,6 +2,7 @@
 
 * [Create and secure a Java REST API using Open Api 3, oauth2 and Spring Security](https://medium.com/@tomerikvalso/create-and-secure-a-rest-api-using-open-api-3-java-and-oauth2-55f7feefd6f1)
 * [API login and JWT token generation using Keycloak](https://developers.redhat.com/blog/2020/01/29/api-login-and-jwt-token-generation-using-keycloak#)
+* [Keycloak getting-started](https://www.keycloak.org/getting-started/getting-started-zip)
 
 ## ENV
 
@@ -40,7 +41,7 @@ Download [spring-security-keycloak-openapi-example](https://github.com/lminggang
 
 ### Step 2
 
-The `clientSecret` value of the `restapi_with_oauth-main/src/main/resources/application.yaml` file is modified to `MyKeycloak` of `Secret`
+The `clientSecret` value of the `spring-security-keycloak-openapi-example/src/main/resources/application.yaml` file is modified to `MyKeycloak` of `Secret`
 
 > For specific steps, please refer to [Create and secure a Java REST API using Open Api 3, oauth2 and Spring Security](https://medium.com/@tomerikvalso/create-and-secure-a-rest-api-using-open-api-3-java-and-oauth2-55f7feefd6f1)
 
@@ -49,7 +50,7 @@ The `clientSecret` value of the `restapi_with_oauth-main/src/main/resources/appl
 Go to the code foler
 
 ```bash
-cd xxx/restapi_with_oauth-main
+cd xxx/spring-security-keycloak-openapi-example
 ```
 
 ### Step 4
@@ -83,7 +84,7 @@ gradle bootRun
 
 ```text
 # 此项目解决办法
-修改 restapi_with_oauth-main/src/main/resources/application.yaml 中 
+修改 spring-security-keycloak-openapi-example/src/main/resources/application.yaml 中 
 
 issuer-uri
 jwk-set-uri
