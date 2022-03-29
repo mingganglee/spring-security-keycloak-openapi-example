@@ -1,0 +1,32 @@
+server:
+  port: 9090
+spring:
+  profiles:
+    active: dev
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8180/realms/mytestrealm
+          jwk-set-uri: http://localhost:8180/realms/mytestrealm/protocol/openid-connect/certs
+
+module-name: mymodule
+api-version: 1.0
+
+springdoc:
+  swagger-ui:
+    oauth:
+      clientId: swagger-test
+      clientSecret: SJhvfY6kmqdFTyvncrhlkwskRIm20m6t
+
+  oAuthFlow:
+    authorizationUrl: http://localhost:8180/realms/mytestrealm/protocol/openid-connect/auth
+    tokenUrl: http://localhost:8180/realms/mytestrealm/protocol/openid-connect/token
+    use-pkce-with-authorization-code-grant: true
+
+
+
+
+
+
